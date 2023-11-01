@@ -1,0 +1,50 @@
+.mR
+{
+    display: flex;
+    justify-content: center;
+}
+
+.gf
+{
+    height: 170px;
+    padding: auto;
+    width: 250px;
+    position: relative;
+    background-color: rgb(201, 236, 253);
+    padding-left: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+label{
+    display: inline-block;
+    width: 120px;
+}
+
+input[type = submit]
+{
+    color: black;
+    width: 80px;
+    position: absolute;
+    right: 5%;
+    margin-top: 10px;
+    
+}
+
+#dR{
+    padding: auto;
+    position: relative;
+    background-color: #fbe9c4;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#dR h1{
+    text-align: center;
+}
+
+

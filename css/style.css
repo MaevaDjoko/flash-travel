@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: 0;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding-left: 80px;
+     
+
+}
+
+
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+header li a {
+    display: block;
+    padding: 5px 30px;
+    background-color: white;
+}
+header li:hover {
+    display: block;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 230px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: black;
+    font-size: 14px;
+}
+.a1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contaa{
+    position: relative;
+}
+
+.btn-reservation {
+    color: black;
+    font-size: 14px;
+    border: 2px solid black;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+.btn-reservation:hover,header li a:hover {
+    color: rgb(173, 146, 57);
+}
+
+/*home accueil bg linear-gradient(burlywood,#333),*/
+#home {
+    background: url("../img/ba.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    animation: slider 50s infinite;
+}
+@keyframes slider {
+    10%{
+         background: url("../img/bus6.jpg");
+     }
+     20%{
+         background: url("../img/bus11.jpg");
+     }
+     30%{
+         background: url("../img/bus12.webp");
+     }
+     40%{
+         background: url("../img/bus13.jpg");
+     }
+     50%{
+         background: url("../img/bus14.jpg");
+     }
+     60%{
+         background: url("../img/bus15.jpg");
+     }
+     70%{
+         background: url("../img/bus1.jpg");
+     }
+     80%{
+         background: url("../img/bus3.jpg");
+     }
+     90%{
+         background: url("../img/apropos.jpeg");
+     }
+     100%{
+         background: url("../img/bus5.jpg");
+     }
+    }
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02s;
+    text-transform: lowercase;
+    animation: apparition 1.8s ease-out;
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    animation: apparition 1.8s ease-out;
+}
+
+@keyframes apparition {/* je cree une animation et je definie ses caracteristiques*/
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#home p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+}
+.home-btn {
+    margin-bottom: 20px;
+}
+
+
+/*div à propos*/
+#about
+{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#about p span
+{
+    width: 40%;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+#bloc {
+    margin-left: 30px;
+}
+
+#text
+{
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    text-align: justify;
+    
+}
+#text span
+{
+    float: right;
+    width: 35%;
+    margin-right: 60px;
+   
+}
+
+#text2
+{
+    font-size: large;
+    text-align: justify;
+    margin-left: 90px;
+    transition: ease 0.7s all;
+}
+.img {
+    transition: ease 0.7s all;
+    border-radius: 5%;
+    }
+
+.img:hover
+{
+    transform: scale(1.1);
+}
+h3
+{
+    text-transform: uppercase;/*le titre en gras*/
+    margin-bottom: 10px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+div hr
+{
+    width: 30%;
+    border: 1px solid burlywood;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 430px;
+   
+}
+
+/*div destination*/
+#presentation
+{
+    margin-top: 150px;
+}
+
+.items
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.items li
+{
+    width: 380px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0, 0 0 0.1em black;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    color: white;
+    transition: ease 0.7s all;
+}
+.items li:hover
+{
+    transform: scale(1.1);/*lorsque je survole l'element, sa taille est multipliee par 1.1*/
+    
+}
+#li1{
+    background-image: url("../img/douala1.jpg");
+    background-size: 380px 200px;
+}
+#li2{
+    background-image: url("../img/douala2.jpg");
+    background-size: 380px 200px;
+}
+#li3{
+    background-image: url("../img/douala3.jpg");
+    background-size: 380px 200px;
+}
+#li4{
+    background-image: url("../img/douala4.jpg");
+    background-size: 380px 200px;
+}
+#li5{
+    background-image: url("../img/douala6.jpg");
+    background-size: 380px 200px;
+}
+#li6{
+    background-image: url("../img/douala7.jpg");
+    background-size: 380px 200px;
+}
+
+.items li p
+{
+    font-size: 8pt;
+}
+
+.open
+{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    padding-bottom: 4px;
+    color: burlywood;
+    text-align: center;
+    text-transform: lowercase;
+    border-radius: 3px;
+    font-size: 10pt;
+    
+}
+
+
+
+.request_message {
+    width: 400px;
+    text-transform: capitalize;
+    background-color: #fff;
+    text-align: center;
+    color: greenyellow;
+    font-size: 13px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgb(173, 146, 57);
+    animation: anime 0.5s ease-out;
+}
+/*animation*/
+@keyframes anime {
+    from {
+        transform: translateY(-70px);
+    }
+}
+
+/*responsive contact*/
+/*
+form {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 8px rgb(173, 146, 57);
+}
+form h2 {
+    color: #222;
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+#contact {
+    padding-left: 500px;
+} */
+
+footer
+{
+    background-color: rgb(20, 3, 51);
+    height: 250px;
+    padding-left: 5px;  
+}
+
+footer p span
+{
+    text-align: end;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.itfoot
+{
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    
+}
+.itfoot li
+{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    color: white;
+    margin: 2em;
+    
+}
+
+  
+#foo p{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+
+
+/*Responsive*/
+@media (max-width:600px) {
+    header .menu {
+        display: none;
+    }
+    .btn-reservation {
+        display: none;
+    }
+
+    /*Home responsive*/
+    #home h2 {
+        font-size: 18px;
+        -webkit-text-stroke: 0;
+        color: #fff;
+    }
+    #home h4 {
+        font-size: 28px;
+    }
+    #home p {
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .home-btn {
+        display:block;
+    }
+    
+    /*Responsive A propos*/
+ 
+    #about p span
+    {
+        width: 70%;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #text
+    {
+        width: 100%;
+        height: 50px;
+        font-size: large;
+        text-align: justify; 
+    }
+    #text span
+    {
+        float: center;
+        width: 35%;
+        margin-left: 60px;
+    }
+    
+    
+
+
+
+
+    /*Responsive menu*/
+    .responsive-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .responsive-menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 28px;
+        box-shadow: 0 10px 0 #29d9d5;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::after {
+        box-shadow: 0 0 0 #29d9d5; 
+        transform: rotate(45deg);
+    }
+    .responsive-menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::before {
+        transform: rotate(-45deg);
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: #222;
+        align-items: unset;
+        animation: animate-menu 1s forwards;
+    }
+    header .menu.responsive li {
+        margin: 20px;
+        width: 100px;
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title></title>
+	   <meta charset="utf-8"/>
+	    <meta http-equiv="X-UA-Comatible" content="IE=edge"/>
+	  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+	       <link rel ="stylesheet" href="css/bootstrap.css"/>
+	       <link rel ="stylesheet" href="css/style1.css"/>
+		   <link rel ="stylesheet" href="css/style4.css"/>
+		   <link rel ="stylesheet" href="css/style.css"/>
+		   <link rel ="stylesheet" href="css/style2.css"/>
+		   <script src="css/script.js"></script>
+		   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		   
+		      <!-- ......................................................................... -->
+	<script> 
+			function choixPersonne(chaine){
+			var a = document.getElementById("allersimple");
+			var b = document.getElementById("allerretour");
+			
+			if (chaine == 'cacher1'){
+				// Contraction du code commenté ci dessous
+				a.style.display = "block";
+				b.style.display = "none";
+				/*var a = document.getElementById("chauffeur").style.display="block";
+				var b = document.getElementById("sous_traitant").style.display="none";*/
+			}
+			else if (chaine == 'cacher2'){
+				// Contraction du code commenté ci dessous
+				a.style.display = "none";
+				b.style.display = "block"; 
+				/*var a = document.getElementById("chauffeur").style.display="none";
+				var b = document.getElementById("sous_traitant").style.display="block";*/ }
+			}
+	</script>
+	
+	<script>
+		function choix(type) {
+			var c = document.getElementById("vip");
+			var d = document.getElementById("classique");
+
+			if(type == 'vi') {
+				c.style.display = "block";
+				d.style.display = "none";
+			}
+			else if (type == 'cla'){
+				c.style.display = "none";
+				d.style.display = "block";
+			}
+		}
+	</script>
+		   
+ </head>
+<body>
+         <!-- ......................................................................... -->
+     <header>
+	 <div class="logo">
+	 		<a href=""><img src="img/log.JPG" alt="" width="90" height="50"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.php" class="a1"><img src="img/reception.png" alt="" width="30" height="30">Accueil</a></li>
+            <li><a href="#about" class="a1"><img src="img/about.png" alt="" width="30" height="30">A propos</a></li>
+            <li><a href="#presentation" class="a1"><img src="img/bus-station.png" alt="" width="30" height="30"><span>Destinations</span></a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#presentation">Douala-Yaounde</a>
+                    </li>
+                    <li>
+                        <a href="#presentation">Douala-Bafoussam</a>
+                    </li>
+                    <li>
+                        <a href="#presentation">Yaounde-Douala</a>
+                    </li>
+                    <li>
+                        <a href="#li1">Yaounde-Bafoussam</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#bas" class="a1"><img src="img/call.png" alt="" width="30" height="30">Contact</a></li>
+        </ul>
+        
+        <div class="responsive-menu"></div>
+
+  </header>
+		
+	 <!-- ............................................................................... -->
+	<section id="reserve">
+	<div class="container-fluid">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h3 class="panel-title">Reservation en ligne</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">1. Reservation
+								<span class="glyphicon glyphicon-saved" aria-hidden="true"></span>
+								</h3>
+							</div>
+							<div class="panel-body">
+								Reservation
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">2. Dates</h3>
+							</div>
+							<div class="panel-body">
+								Dates et Tarifs
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<a href="" class="panel-title">3.Reserver Maintenant</a>
+								<!--<div class="panel-title"></div>-->
+								
+								<!--<h3 class="panel-title">3. Information Client</h3>-->
+							</div>
+							<div class="panel-body">
+								Information Client
+							</div>
+						</div>
+
+						<div class="formulaire">
+						    <form action="#">
+
+							    <label>Nom</label>
+							    <input type="text" placeholder="Ex: Kuiss" class="form-nom">
+
+							    <label>Prénom</label>
+							    <input type="text" placeholder="Ex: beril" class="form-prenom">
+
+							    <label>Numero de tel</label>
+							    <input type="text" placeholder="numero" class="form-tel">
+
+								<label>to</label>
+								<input type="text" placeholder=" Ex deutsch" class="form-to">
+
+								<label>Aller et Retour ?</label>
+								<input type="text" placeholder=" Ex oui aller et retour , non aller Simple " class="form-aller">
+								
+								<label>DepartureDate</label>
+								<input type="text" placeholder=" mm/dd/yy" class="form-DepartureDate">
+
+								<label>Return Date</label>
+								<input type="text" placeholder=" mm/dd/yy" class="form-Return">
+
+								<label>Prix-ticket</label>
+								<input type="text" placeholder=" " class="form-Prix">
+								
+								<label>bagages ? :</label>
+								<input type="text" placeholder="" class="form-bagage">
+
+								<label>exp year :</label>
+								<input type="text" placeholder="2022" class="form-annee">
+
+							    <input type="submit" class="submit" onclick="afficherPDF();">
+						    </form>
+					    </div>
+						
+					</div>
+					
+					<div class="col-md-3">
+						<div class="panel panel-warning">
+							<div class="panel-heading">
+								<h3 class="panel-title">4. Billet</h3>
+							</div>
+							<div class="panel-body">
+								Billet Totalement
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<!--
+<form action="infoCli.php" class="info" method="post">
+
+		<label for="nom">Votre nom</label>
+		<input type="text" id="nom" name="LastName"/>
+	
+		<label for="nom">Votre prénom</label>
+		<input type="text" id="prenom" name="firstName"/>
+
+		<label for="numero">Votre numero de tel</label>
+		<input type="text" id="nemero"/>
+	
+		<p>Avez vous des bagages ?</p>
+
+		<input type="radio" name="avoir_les_bagages" id="avoir_les_bagages" value="oui" checked="checked">
+
+		<label for="avoir_les_bagages">oui</label>
+
+		<input type="radio" name="avoir_les_bagages" id="avoir_les_bagages" value="non">
+
+		<label for="avoir_les_bagages">non</label>
+
+	</p>
+
+	<p>
+		<input type="submit" value="Enregistrer">
+	</p>
+</form>
+-->
+
+	   </div>	
+	   </form>
+	</div>  
+  </body>
+</html>
+	 
+	 
+	 
+	 
+	
+

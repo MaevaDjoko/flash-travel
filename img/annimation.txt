@@ -1,0 +1,33 @@
+@keyframes slider {
+   10%{
+        background: url("../img/bus6.jpg")
+    }
+    20%{
+        background: url("../img/bus11.jpg")
+    }
+    30%{
+        background: url("../img/bus12.webp")
+    }
+    40%{
+        background: url("../img/bus13.jpg")
+    }
+    50%{
+        background: url("../img/bus14.jpg")
+    }
+    60%{
+        background: url("../img/bus15.jpg")
+    }
+    70%{
+        background: url("../img/bus1.jpg")
+    }
+    80%{
+        background: url("../img/bus3.jpg")
+    }
+    90%{
+        background: url("../img/apropos.jpeg")
+    }
+    100%{
+        background: url("../img/bus5.jpg")
+    }
+
+ animation: slider 50s infinite;
